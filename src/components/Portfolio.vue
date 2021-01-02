@@ -207,9 +207,10 @@
               require('@/assets/imgs/projects/ltv/admin/services-new.png'),
               require('@/assets/imgs/projects/ltv/admin/403.png'),
               require('@/assets/imgs/projects/ltv/admin/404-resource.png'),
+              require('@/assets/imgs/projects/ltv/public/404.png'),
               require('@/assets/imgs/projects/ltv/public/internet.png'),
               require('@/assets/imgs/projects/ltv/public/contact.png'),
-              require('@/assets/imgs/projects/ltv/public/404.png'),
+              require('@/assets/imgs/projects/ltv/swagger/keycloak-login.png'),
             ]
           }
         },
@@ -302,11 +303,10 @@
   }
 
   .project-tab {
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 
   .project-tab-selected {
-    font-size: 1.1em;
     color: white!important;
     background-color: var(--v-accent-base)!important;
   }
