@@ -1,0 +1,12 @@
+// Required for modifying core defaults
+@import '~vuetify/src/styles/styles.sass';
+@import '~vuetify/src/styles/settings/variables';
+
+$body-font-family: 'Roboto';
+$heading-font-family: $body-font-family;
+
+@media #{map-get($display-breakpoints, 'xl-only')} {
+    .container {
+        max-width: 1100px !important;
+    }
+}
