@@ -25,14 +25,13 @@
             v-model="currentItem"
             background-color="white"
             color="accent"
-            hide-slider
             centered
           >
             <v-tab
               v-for="tab in tabs" 
               :key="tab.key"
-              class="pl-7 mt-1 mb-1 pr-7 project-tab"
-              :class="[currentItem == tab.key ? 'project-tab-selected' : '', tab.css]"
+              class="project-tab"
+              :class="tab.css"
               :href="'#' + tab.key"
               @click="currentItem = tab.key"
             >
@@ -304,11 +303,6 @@
 
   .project-tab {
     font-size: 1.05em;
-  }
-
-  .project-tab-selected {
-    color: white!important;
-    background-color: var(--v-accent-base)!important;
   }
 
   .v-card--reveal button:hover {
