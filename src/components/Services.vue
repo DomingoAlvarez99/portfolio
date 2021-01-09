@@ -49,7 +49,7 @@
         items: [
           {
             icon: 'mdi-cellphone-iphone',
-            title: 'ANDROID Y SWIFT',
+            title: 'ANDROID & SWIFT',
             text: 'Aplicaciones nativas en Android y en Swift.'
           },
           {
