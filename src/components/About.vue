@@ -21,7 +21,7 @@
           </v-icon>
           ¿Quién soy?
         </h4>
-        <p class="mt-3">Soy un chico de 21 años que vive en Granada y que disfruta creando aplicaciones en su tiempo libre.</p>
+        <p class="mt-3">Soy un chico de {{age}} años que vive en Granada y que disfruta creando aplicaciones en su tiempo libre.</p>
         <p>Principalmente trabajo en el desarrollo de back-end usando el Framework Spring, aunque para ciertos trabajos uso Laravel. En la parte de front-end suelo usar VueJS para el desarrollo web y Android Nativo & Swift para el desarrollo móvil.</p>
       </v-col>
       <v-col
@@ -108,9 +108,18 @@
               { title: 'Pentaho', icon: 'mdi-file', color: 'orange' }
             ]
           }
-        ]
+        ],
+        age: 0
       }
-    }    
+    },
+    methods: {
+      getCurrentAge() {
+        this.age = Math.floor((new Date() - new Date('1999-04-23').getTime()) / 3.15576e+10)
+      }
+    },
+    mounted() {
+      this.getCurrentAge()
+    }
   }
 </script>
 

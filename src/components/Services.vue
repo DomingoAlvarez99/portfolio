@@ -14,7 +14,7 @@
             >
               mdi-bookmark
             </v-icon>
-            Lo que hago
+            Lo que uso & hago
           </h2>
         </v-col>
         <v-col 
@@ -35,7 +35,7 @@
           <h4 class="mt-2 font-weight-medium">
             {{item.title}}
           </h4>
-          <p class="mt-3">{{item.text}}</p>
+          <!--<p class="mt-3">{{item.text}}</p>-->
         </v-col>
       </v-row>
     </v-container>
@@ -49,7 +49,7 @@
         items: [
           {
             icon: 'mdi-cellphone-iphone',
-            title: 'APLICACIONES MÓVILES',
+            title: 'ANDROID Y SWIFT',
             text: 'Aplicaciones nativas en Android y en Swift.'
           },
           {
