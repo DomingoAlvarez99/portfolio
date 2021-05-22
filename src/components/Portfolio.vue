@@ -178,6 +178,7 @@
       ],
       items: [
         {
+          id: 1,
           title: 'Lecrín TV',
           type: 'web',
           src: require('@/assets/imgs/projects/ltv/portfolio.png'),
@@ -212,53 +213,7 @@
               require('@/assets/imgs/projects/ltv/swagger/keycloak-login.png'),
             ]
           }
-        },
-        /*
-        {
-          title: 'APLICACIONES MÓVILES2',
-          type: 'mobile',
-          repository: '',
-          src: require('@/assets/imgs/projects/ltv/portfolio.png'),
-          technologies: [
-            'VueJS', 'Spring Boot'
-          ]
-        },
-        {
-          title: 'APLICACIONES MÓVILES3',
-          type: 'mobile',
-          repository: '',
-          src: require('@/assets/imgs/projects/ltv/portfolio.png'),
-          technologies: [
-            'VueJS', 'Spring Boot'
-          ]
-        },
-        {
-          title: 'APLICACIONES MÓVILES4',
-          type: 'mobile',
-          repository: '',
-          src: require('@/assets/imgs/projects/ltv/portfolio.png'),
-          technologies: [
-            'VueJS', 'Spring Boot'
-          ]
-        },
-        {
-          title: 'APLICACIONES MÓVILES5',
-          type: 'mobile',
-          repository: '',
-          src: require('@/assets/imgs/projects/ltv/portfolio.png'),
-          technologies: [
-            'VueJS', 'Spring Boot'
-          ]
-        },
-        {
-          title: 'APLICACIONES MÓVILES6',
-          type: 'mobile',
-          repository: '',
-          src: require('@/assets/imgs/projects/ltv/portfolio.png'),
-          technologies: [
-            'VueJS', 'Spring Boot'
-          ]
-        }*/
+        }
       ]
     }),
     methods: {
@@ -269,6 +224,16 @@
       enableDialog(details) {
         this.dialog = true
         this.currentItemDetails = details
+      }
+    },
+    mounted() {
+      let currentId = this.$route.query.id
+
+      if (currentId !== undefined) {
+        let currentItem = this.items.find(i => i.id == currentId)
+
+        if (currentItem !== undefined)
+          this.enableDialog(currentItem.details)
       }
     }
   }
