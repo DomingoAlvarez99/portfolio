@@ -206,11 +206,9 @@
               require('@/assets/imgs/projects/ltv/admin/users.png'),
               require('@/assets/imgs/projects/ltv/admin/services-new.png'),
               require('@/assets/imgs/projects/ltv/admin/403.png'),
-              require('@/assets/imgs/projects/ltv/admin/404-resource.png'),
               require('@/assets/imgs/projects/ltv/public/404.png'),
               require('@/assets/imgs/projects/ltv/public/internet.png'),
-              require('@/assets/imgs/projects/ltv/public/contact.png'),
-              require('@/assets/imgs/projects/ltv/swagger/keycloak-login.png'),
+              require('@/assets/imgs/projects/ltv/public/contact.png')
             ]
           }
         }
